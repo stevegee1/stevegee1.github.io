@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CV & Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .cv-section {
+            margin-bottom: 2rem;
+        }
+
+        .cv-section h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+
+        .cv-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-item h4 {
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .cv-item .meta {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-post {
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .blog-post h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-post .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Researcher | Writer | Thinker</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#research">Research Interests</a></li>
+            <li><a href="#blog">Popular Blog Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website. I am a [Your Title/Position] passionate about [Your Field]. This site showcases my academic work, research interests, and writing.</p>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            
+            <div class="cv-section">
+                <h3>Education</h3>
+                <div class="cv-item">
+                    <h4>Ph.D. in [Your Field]</h4>
+                    <div class="meta">University Name, Year</div>
+                    <p>Dissertation: [Title of your dissertation]</p>
+                </div>
+                <div class="cv-item">
+                    <h4>M.Sc./M.A. in [Your Field]</h4>
+                    <div class="meta">University Name, Year</div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Experience</h3>
+                <div class="cv-item">
+                    <h4>Position Title</h4>
+                    <div class="meta">Institution/Company, Years</div>
+                    <p>Brief description of your role and achievements.</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Publications</h3>
+                <div class="cv-item">
+                    <p><strong>Your Name</strong>. (Year). "Title of Publication." <em>Journal Name</em>, Volume(Issue), pages.</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Skills</h3>
+                <p>List your relevant skills, methodologies, languages, tools, etc.</p>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>My research focuses on [Primary Research Area]. I am particularly interested in:</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Topic 1:</strong> Brief description of this research interest</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Topic 2:</strong> Brief description of this research interest</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Topic 3:</strong> Brief description of this research interest</li>
+            </ul>
+            <p style="margin-top: 1rem;">Current projects include [describe your ongoing research or projects].</p>
+        </section>
+
+        <section id="blog">
+            <h2>Popular Blog Posts</h2>
+            
+            <div class="blog-post">
+                <h3>Title of Your First Popular Blog Post</h3>
+                <div class="date">Posted on: Month Day, Year</div>
+                <p>This is where you can include a transcript or summary of your blog post. You can describe the main ideas, key takeaways, or provide the full text of your article...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Title of Your Second Popular Blog Post</h3>
+                <div class="date">Posted on: Month Day, Year</div>
+                <p>Another blog post transcript goes here. Share your insights, research findings, or thought pieces that have resonated with your audience...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Title of Your Third Popular Blog Post</h3>
+                <div class="date">Posted on: Month Day, Year</div>
+                <p>Continue adding your blog post transcripts. These could be pieces that have generated discussion, received significant engagement, or represent your best work...</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> your.email@example.com
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> <a href="https://github.com/yourusername">github.com/yourusername</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Twitter:</strong> <a href="https://twitter.com/yourhandle">@yourhandle</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
